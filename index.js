@@ -10,7 +10,6 @@ function dwarfRollCall(dwarves) {
   	return newStr;
   }
 
-
 function summonCaptainPlanet(planeteerCalls){
   return planeteerCalls.map(function(i) {
 		return i.toUpperCase() + "!";
@@ -30,7 +29,7 @@ function findTheCheese (foods) {
   var cheese = ["camembert", "cheddar", "gouda"];
 for(var i = 0; i < foods.length; i++) {
   var foundcheese = cheese.indexOf(foods[i]);
-  if(foundcheese!== -1) {
+  if(foundcheese >= 0) {
     return foods[i];
   }
 }
